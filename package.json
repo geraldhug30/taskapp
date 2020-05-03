@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "for Mood survey",
   "main": "server.js",
+  "engines": {
+    "node": "12.16.1"
+  },
   "scripts": {
     "test": "jest",
     "start": "node server.js",
