@@ -1,0 +1,43 @@
+{
+  "name": "moodmeter",
+  "version": "1.0.0",
+  "description": "for Mood survey",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "clientinstall": "npm install --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client \"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "geraldhug92@gmail.com"
+  },
+  "keywords": [
+    "mood"
+  ],
+  "author": "gerald hug",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "dotenv": "^8.2.0",
+    "loadtest": "^5.0.3",
+    "nodemon": "^2.0.3",
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.4.0",
+    "helmet": "^3.22.0",
+    "mongoose": "^5.9.11",
+    "morgan": "^1.10.0",
+    "node-sass": "^4.14.0"
+  }
+}
