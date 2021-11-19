@@ -25,6 +25,9 @@ const moodDataSchema = mongoose.Schema(
     ownWordReason: {
       type: String,
     },
+    resiliency: {
+      type: Boolean,
+    },
   },
   {
     timestamps: true,

@@ -1,5 +1,5 @@
 {
-  "name": "moodmeter",
+  "name": "moodmeteradmin",
   "version": "1.0.0",
   "description": "for Mood survey",
   "main": "server.js",
@@ -35,12 +35,18 @@
     "supertest": "^4.0.2"
   },
   "dependencies": {
+    "bcrypt": "^4.0.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-validator": "^6.4.0",
     "helmet": "^3.22.0",
-    "mongoose": "^5.9.11",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.12",
     "morgan": "^1.10.0",
-    "node-sass": "^4.14.0"
+    "node-sass": "^4.14.0",
+    "redis": "^3.0.2"
+  },
+  "directories": {
+    "test": "test"
   }
 }
